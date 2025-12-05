@@ -1640,6 +1640,24 @@ body.dark-mode  .webinar{
             color: white;
         }
 
+/* Prevent wrapping on mobile */
+.no-wrap-mobile {
+    flex-wrap: nowrap !important;
+}
+
+/* Reduce font + padding so it fits nicely on small screens */
+@media (max-width: 576px) {
+    .status-badge {
+        font-size: 12px;
+        padding: 4px 8px;
+    }
+
+    .share-btn {
+        font-size: 12px;
+        padding: 4px 10px !important;
+        white-space: nowrap;
+    }
+}
 
 
 

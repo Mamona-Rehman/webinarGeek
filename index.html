@@ -25,42 +25,43 @@
 
 <body>
     <div class="">
-        <div class="row p-2">
+        <div class="row p-2 align-items-center">
 
-            <div class="col-md-2  col-2 mt-2">
+            <!-- Logo -->
+            <div class="col-md-2 col-6 mt-2 d-flex align-items-center">
                 <img src="images/webinargeek-light.svg" alt="Column 1" class="img-fluid">
             </div>
-
-            <div class="col-md-3 col-8 ">
-                <a class="custom-link d-inline-flex align-items-start p-2 mt-1"
+        
+            <!-- Powered By Section -->
+            <div class="col-md-3 col-5 d-flex align-items-center">
+                <a class="custom-link d-inline-flex align-items-center p-2 mt-1 w-100"
                     href="made-with-webinargeek.html" target="_blank" rel="noreferrer"
                     data-bs-toggle="tooltip" data-bs-placement="bottom"
                     title="Host your own webinar&#10; Click to learn more about Webinar">
+        
                     <span class="me-2 powered-by">Powered by</span>
-
+        
                     <span class="play-icon">
                         <i class="fa-solid fa-play"></i>
                     </span>
-
-                    <span class="me-2 ms-2 webinar">
+        
+                    <span class="me-2 ms-2 webinar d-lg-block d-none">
                         <strong>Webinar</strong> Geek
                     </span>
                 </a>
-
-
             </div>
-
-            <div class="col-md-7 col-2 mt-1">
-
+        
+            <!-- Moon Icon -->
+            <div class="col-md-7 col-1 d-flex justify-content-end align-items-center mt-1">
                 <div class="moon-icon-wrapper">
-                    <span></span>
-                    <i class="fa-solid fa-moon moon-hover" style="font-size: 20px" data-bs-toggle="tooltip"
-                        data-bs-placement="bottom" title="Switch to dark mode" id="moonIcon"></i>
+                    <i class="fa-solid fa-moon moon-hover" style="font-size: 20px"
+                        data-bs-toggle="tooltip" data-bs-placement="bottom"
+                        title="Switch to dark mode" id="moonIcon"></i>
                 </div>
-
             </div>
-
+        
         </div>
+        
         <div class="row">
             <div class="col-12 d-flex justify-content-center mt-1">
                 <img src="images/webinar.png" alt="Example" class="img-fluid">
@@ -69,19 +70,21 @@
         <div class="row">
             <div class="col-2"></div>
             <div class="col-8">
-                <div class="container-custom">
-                    <div class="header-section">
-                        <div class="status-badge">
-                            <i class="fas fa-gift"></i>
-                            Happening soon
+                <div class="container-custom ">
+                    <div class=" mb-3">
+                        <div class="row d-flex justify-content-between">
+                            <div class="col-6"> <div class="status-badge">
+                                <i class="fas fa-gift"></i>
+                                Happening soon
+                            </div></div>
+                            <div class="col-6 d-flex justify-content-end">
+                                <button class="share-btn rounded-pill p-2" style="transition: background 0.2s;"  data-bs-toggle="modal" data-bs-target="#shareModal">
+                                    <i class="fas fa-share-nodes"></i>
+                                    Share
+                                </button>
+                            </div>
                         </div>
-                        <button class="share-btn rounded-pill p-2" style="transition: background 0.2s;"  data-bs-toggle="modal" data-bs-target="#shareModal">
-                            <i class="fas fa-share-nodes"></i>
-                            Share
-                        </button>
-                        <style>
                        
-                        </style>
                     </div>
             
                     <h1 class="main-title">
@@ -111,17 +114,25 @@
                         </div>
                     </div>
             
-                    <div class="footer-section">
-                        <div class="powered-by w-100 d-flex justify-content-center">
-                            Powered by
-                            <span class="play-icon">
-                                <i class="fa-solid fa-play"></i>
-                            </span> 
-                            WEBINARGEEK
+                    <div class="">
+                        <div class="row">
+                            <div class="col-lg-8 col-7 d-flex justify-content-end">
+                                <div class="powered-by">
+                                    Powered by
+                                    <span class="play-icon">
+                                        <i class="fa-solid fa-play"></i>
+                                    </span> 
+                                    WEBINARGEEK
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-3 d-flex justify-content-end">
+                                <button class="audio-btn">
+                                    <i class="fas fa-headphones"></i>
+                                </button>
+                            </div>
                         </div>
-                        <button class="audio-btn">
-                            <i class="fas fa-headphones"></i>
-                        </button>
+                       
+                    
                     </div>
                 </div>
             </div>
