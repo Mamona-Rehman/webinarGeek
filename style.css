@@ -1583,4 +1583,64 @@ footer {
 }
 
 
+    /* Light mode */
+body {
+    background-color: #ffffff;
+    color: #3b3b3b;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Dark mode */
+body.dark-mode {
+    background-color: #757575; /* Gray */
+    color: #ffffff; /* All text white */
+}
+
+/* Default moon icon color */
+.moon-hover {
+    cursor: pointer;
+    transition: color 0.3s;
+    color: #3b3b3b;
+}
+
+
+body.dark-mode h1{
+    color: #ffffff;
+}
+body.dark-mode .share-btn{
+    color: #ffffff;
+}
+body.dark-mode  .share-btn.rounded-pill:hover {
+            background-color: #e3f2fd77;
+            border-radius: 50rem !important;
+ 
+        }
+body.dark-mode  .countdown-number{
+
+            color: white;
+        }
+body.dark-mode  .datetime{
+
+            color: rgb(152, 176, 253);
+        }
+body.dark-mode  .countdown-label{
+
+            color: #afafaf;
+        }
+body.dark-mode  .powered-by{
+
+            color: white;
+        }
+body.dark-mode  .powered-by{
+
+            color: white;
+        }
+body.dark-mode  .webinar{
+
+            color: white;
+        }
+
+
+
+
 
