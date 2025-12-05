@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integrations - WebinarGeek</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <div class="logo-icon">
+                    <i class="fas fa-play"></i>
+                </div>
+                <span>WEBINARGEEK</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            Product
+                            <i class="fas fa-chevron-down dropdown-arrow"></i>
+                        </a>
+                        <div class="dropdown-menu-custom">
+                            <div class="row">
+                                <div class="col-md-4 dropdown-intro">
+                                    <h5>Product</h5>
+                                    <p>Organize and host webinars with ease.</p>
+                                    <a href="demo.html" class="btn-watch-demo">Watch demo</a>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="row">
+                                        <div class="col-md-4 dropdown-column">
+                                            <h6>Features</h6>
+                                            <a href="#" class="dropdown-item-custom">Integrations</a>
+                                            <a href="payment.html" class="dropdown-item-custom">Pricing</a>
+                                            <a href="#" class="dropdown-item-custom">Product Updates</a>
+                                        </div>
+                                        <div class="col-md-4 dropdown-column">
+                                            <h6>WEBINARS</h6>
+                                            <a href="#" class="dropdown-item-custom">Live webinar</a>
+                                            <a href="#" class="dropdown-item-custom">Automated webinar</a>
+                                            <a href="#" class="dropdown-item-custom">On demand webinar</a>
+                                            <a href="#" class="dropdown-item-custom">Hybrid webinar</a>
+                                            <a href="#" class="dropdown-item-custom">Paid webinar</a>
+                                        </div>
+                                        <div class="col-md-4 dropdown-column">
+                                            <h6>SPOTLIGHT</h6>
+                                            <a href="#" class="dropdown-item-custom">HubSpot Integration</a>
+                                            <a href="#" class="dropdown-item-custom">Salesforce Integration</a>
+                                            <a href="#" class="dropdown-item-custom">Webinar Channel</a>
+                                            <a href="#" class="dropdown-item-custom">AI powered webinars</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            Customers
+                            <i class="fas fa-chevron-down dropdown-arrow"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            Learning Center
+                            <i class="fas fa-chevron-down dropdown-arrow"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#">Watch Demo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Log in</a></li>
+                </ul>
+                <button class="btn btn-trial ms-3">Start free trial</button>
+                
+                <a href="#" class="language-selector">
+                    <i class="fas fa-globe"></i>
+                    <span>EN</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto text-center">
+                    <h1 class="display-4 fw-bold mb-4">Integrations</h1>
+                    <p class="lead text-muted">Seamlessly connect WebinarGeek with your favorite tools and 6,000+ other services to get the most out of your webinars.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search and Filter Section -->
+    <section class="py-5">
+        <div class="container">
+    
+            <!-- Search + Tabs -->
+            <div class="row mb-4">
+                <div class="col-lg-8 mx-auto">
+    
+                    <!-- Search -->
+                    <div class="input-group mb-3">
+                        <span class="input-group-text bg-white"><i class="fas fa-search"></i></span>
+                        <input type="text" class="form-control" placeholder="Search for integrations">
+                    </div>
+    
+                    <!-- Tabs -->
+                    <ul class="nav nav-tabs justify-content-center" id="integrationTabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#all">All</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#payment">Payment Processing</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#automation">Automation</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#analytics">Analytics & Tags</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#email">Email Marketing</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#crm">CRM</button>
+                        </li>
+                    </ul>
+    
+                </div>
+            </div>
+    
+            <!-- Tab Content -->
+            <div class="tab-content">
+    
+                <!-- ALL TAB -->
+                <div class="tab-pane fade show active" id="all">
+                    <div class="row g-4">
+                        <!-- All 3 Cards -->
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card h-100 shadow-sm border-0" style="background-color: #d2e8ff;">
+                                <div class="card-body p-4">
+                                    <div class="mb-3">
+                                       <img src="images/activecampaign.svg" alt="" style="width:40px;height:auto;">
+                                    </div>
+                                    <h5 class="card-title mb-3">Active Compaign</h5>
+                                    <div class="d-flex gap-2  flex-wrap">
+                                        <span class="badge p-2 fs-6" style="background-color: rgb(14 77 94); color: #fff;">Automation</span>
+                                        <span class="badge p-2 fs-6" style="background-color: rgb(14 77 94); color: #fff;">Native</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card h-100 shadow-sm border-0" style="background-color: #d2e8ff;">
+                                <div class="card-body p-4">
+                                    <div class="mb-3">
+                                       <img src="images/autorespond.svg" alt="" style="width:40px;height:auto;">
+                                    </div>
+                                    <h5 class="card-title mb-3">Autorespond</h5>
+                                    <div class="d-flex gap-2  flex-wrap">
+                                        <span class="badge p-2 fs-6" style="background-color: rgb(14 77 94); color: #fff;">Automation</span>
+                                        <span class="badge p-2 fs-6" style="background-color: rgb(14 77 94); color: #fff;">Native</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card h-100 shadow-sm border-0" style="background-color: #d2e8ff;">
+                                <div class="card-body p-4">
+                                    <div class="mb-3">
+                                       <img src="images/click-funnels.svg" alt="" style="width:40px;height:auto;">
+                                    </div>
+                                    <h5 class="card-title mb-3">ClickFunnels</h5>
+                                    <div class="d-flex gap-2  flex-wrap">
+                                        <span class="badge p-2 fs-6" style="background-color: rgb(14 77 94); color: #fff;">Automation</span>
+                                        <span class="badge p-2 fs-6" style="background-color: rgb(14 77 94); color: #fff;">Native</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card h-100 shadow-sm border-0" style="background-color: #d2e8ff;">
+                                <div class="card-body p-4">
+                                    <div class="mb-3">
+                                       <img src="images/convertkit01.svg" alt="" style="width:40px;height:auto;">
+                                    </div>
+                                    <h5 class="card-title mb-3">ConvertKit</h5>
+                                    <div class="d-flex gap-2  flex-wrap">
+                                        <span class="badge p-2 fs-6" style="background-color: rgb(14 77 94); color: #fff;">Automation</span>
+                                        <span class="badge p-2 fs-6" style="background-color: rgb(14 77 94); color: #fff;">Native</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                    
+    
+                       
+    
+                    </div>
+                    <div class="row g-4 mt-2">
+                        <!-- All 3 Cards -->
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card h-100 shadow-sm border-0" style="background-color: #d2e8ff;">
+                                <div class="card-body p-4">
+                                    <div class="mb-3">
+                                       <img src="images/drip-ar21.svg" alt="" style="width:40px;height:auto;">
+                                    </div>
+                                    <h5 class="card-title mb-3">Drip</h5>
+                                    <div class="d-flex gap-2  flex-wrap">
+                                        <span class="badge p-2 fs-6" style="background-color: rgb(14 77 94); color: #fff;">Drip</span>
+                                      
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card h-100 shadow-sm border-0" style="background-color: #d2e8ff;">
+                                <div class="card-body p-4">
+                                    <div class="mb-3">
+                                       <img src="images/enormail.svg" alt="" style="width:40px;height:auto;">
+                                    </div>
+                                    <h5 class="card-title mb-3">Enormail</h5>
+                                    <div class="d-flex gap-2  flex-wrap">
+                                        <span class="badge p-2 fs-6" style="background-color: rgb(14 77 94); color: #fff;">Automation</span>
+                                        <span class="badge p-2 fs-6" style="background-color: rgb(14 77 94); color: #fff;">Native</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card h-100 shadow-sm border-0" style="background-color: #d2e8ff;">
+                                <div class="card-body p-4">
+                                    <div class="mb-3">
+                                       <img src="images/meta-1.svg" alt="" style="width:40px;height:auto;">
+                                    </div>
+                                    <h5 class="card-title mb-3">Facebook Leads Ads</h5>
+                                    <div class="d-flex gap-2  flex-wrap">
+                                        <span class="badge p-2 fs-6" style="background-color: rgb(14 77 94); color: #fff;">Zapier</span>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card h-100 shadow-sm border-0" style="background-color: #d2e8ff;">
+                                <div class="card-body p-4">
+                                    <div class="mb-3">
+                                       <img src="images/6929233_google-ads_logo_icon.svg" alt="" style="width:40px;height:auto;">
+                                    </div>
+                                    <h5 class="card-title mb-3">Google Ads leads</h5>
+                                    <div class="d-flex gap-2  flex-wrap">
+                                        <span class="badge p-2 fs-6" style="background-color: rgb(14 77 94); color: #fff;">Zapier</span>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                    </div>
+                    <div class="row g-4 mt-2">
+                        <!-- All 3 Cards -->
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card h-100 shadow-sm border-0" style="background-color: #d2e8ff;">
+                                <div class="card-body p-4">
+                                    <div class="mb-3">
+                                       <img src="images/google_sheets_logo.svg" alt="" style="width:40px;height:auto;">
+                                    </div>
+                                    <h5 class="card-title mb-3">Google Sheets</h5>
+                                    <div class="d-flex gap-2  flex-wrap">
+                                        <span class="badge p-2 fs-6" style="background-color: rgb(14 77 94); color: #fff;">Zapier</span>
+                                      
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card h-100 shadow-sm border-0" style="background-color: #d2e8ff;">
+                                <div class="card-body p-4">
+                                    <div class="mb-3">
+                                       <img src="images/google-tag-manager.svg" alt="" style="width:40px;height:auto;">
+                                    </div>
+                                    <h5 class="card-title mb-3">Google Tag Manager</h5>
+                                    <div class="d-flex gap-2  flex-wrap">
+                                        <span class="badge p-2 fs-6" style="background-color: rgb(14 77 94); color: #fff;">Analytics & Tags</span>
+                                        <span class="badge p-2 fs-6" style="background-color: rgb(14 77 94); color: #fff;">Native</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card h-100 shadow-sm border-0" style="background-color: #d2e8ff;">
+                                <div class="card-body p-4">
+                                    <div class="mb-3">
+                                       <img src="images/hubspot (1).svg" alt="" style="width:40px;height:auto;">
+                                    </div>
+                                    <h5 class="card-title mb-3">Hub Spot</h5>
+                                    <div class="d-flex gap-2  flex-wrap">
+                                        <span class="badge p-2 fs-6" style="background-color: rgb(14 77 94); color: #fff;">CRM</span>
+                                        <span class="badge p-2 fs-6" style="background-color: rgb(14 77 94); color: #fff;">Native</span>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card h-100 shadow-sm border-0" style="background-color: #d2e8ff;">
+                                <div class="card-body p-4">
+                                    <div class="mb-3">
+                                       <img src="images/integrately_new_logo_icon.svg" alt="" style="width:40px;height:auto;">
+                                    </div>
+                                    <h5 class="card-title mb-3">Integrately</h5>
+                                    <div class="d-flex gap-2  flex-wrap">
+                                        <span class="badge p-2 fs-6" style="background-color: rgb(14 77 94); color: #fff;">Automation</span>
+                                        <span class="badge p-2 fs-6" style="background-color: rgb(14 77 94); color: #fff;">Native</span>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                       
+    
+                    </div>
+                </div>
+    
+                <!-- PAYMENT TAB -->
+                <div class="tab-pane fade" id="payment">
+                    <div class="row g-4">
+                        <!-- All 3 Cards -->
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card h-100 shadow-sm border-0" style="background-color: #d2e8ff;">
+                                <div class="card-body p-4">
+                                    <div class="mb-3">
+                                       <img src="images/mollie_m-1.svg" alt="" style="width:40px;height:auto;">
+                                    </div>
+                                    <h5 class="card-title mb-3">Mollie</h5>
+                                    <div class="d-flex gap-2  flex-wrap">
+                                        <span class="badge p-2 fs-6" style="background-color: rgb(14 77 94); color: #fff;">Payment Proccess</span>
+                                        <span class="badge p-2 fs-6" style="background-color: rgb(14 77 94); color: #fff;">Native</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card h-100 shadow-sm border-0" style="background-color: #d2e8ff;">
+                                <div class="card-body p-4">
+                                    <div class="mb-3">
+                                       <img src="images/moneybird.svg" alt="" style="width:40px;height:auto;">
+                                    </div>
+                                    <h5 class="card-title mb-3">Moneybird</h5>
+                                    <div class="d-flex gap-2  flex-wrap">
+                                        <span class="badge p-2 fs-6" style="background-color: rgb(14 77 94); color: #fff;">Payment Proccess</span>
+                                        <span class="badge p-2 fs-6" style="background-color: rgb(14 77 94); color: #fff;">Native</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card h-100 shadow-sm border-0" style="background-color: #d2e8ff;">
+                                <div class="card-body p-4">
+                                    <div class="mb-3">
+                                       <img src="images/stripe.svg" alt="" style="width:40px;height:auto;">
+                                    </div>
+                                    <h5 class="card-title mb-3">Stripe</h5>
+                                    <div class="d-flex gap-2  flex-wrap">
+                                        <span class="badge p-2 fs-6" style="background-color: rgb(14 77 94); color: #fff;">Payment Proccess</span>
+                                        <span class="badge p-2 fs-6" style="background-color: rgb(14 77 94); color: #fff;">Native</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card h-100 shadow-sm border-0" style="background-color: #d2e8ff;">
+                                <div class="card-body p-4">
+                                    <div class="mb-3">
+                                       <img src="images/convertkit01.svg" alt="" style="width:40px;height:auto;">
+                                    </div>
+                                    <h5 class="card-title mb-3">ConvertKit</h5>
+                                    <div class="d-flex gap-2  flex-wrap">
+                                        <span class="badge p-2 fs-6" style="background-color: rgb(14 77 94); color: #fff;">Automation</span>
+                                        <span class="badge p-2 fs-6" style="background-color: rgb(14 77 94); color: #fff;">Native</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+    
+                <!-- AUTOMATION TAB -->
+                <div class="tab-pane fade" id="automation">
+                    <div class="row g-4">
+                        <!-- All 3 Cards -->
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card h-100 shadow-sm border-0" style="background-color: #d2e8ff;">
+                                <div class="card-body p-4">
+                                    <div class="mb-3">
+                                       <img src="images/activecampaign.svg" alt="" style="width:40px;height:auto;">
+                                    </div>
+                                    <h5 class="card-title mb-3">Active Compaign</h5>
+                                    <div class="d-flex gap-2  flex-wrap">
+                                        <span class="badge p-2 fs-6" style="background-color: rgb(14 77 94); color: #fff;">Automation</span>
+                                        <span class="badge p-2 fs-6" style="background-color: rgb(14 77 94); color: #fff;">Native</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card h-100 shadow-sm border-0" style="background-color: #d2e8ff;">
+                                <div class="card-body p-4">
+                                    <div class="mb-3">
+                                       <img src="images/autorespond.svg" alt="" style="width:40px;height:auto;">
+                                    </div>
+                                    <h5 class="card-title mb-3">Autorespond</h5>
+                                    <div class="d-flex gap-2  flex-wrap">
+                                        <span class="badge p-2 fs-6" style="background-color: rgb(14 77 94); color: #fff;">Automation</span>
+                                        <span class="badge p-2 fs-6" style="background-color: rgb(14 77 94); color: #fff;">Native</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card h-100 shadow-sm border-0" style="background-color: #d2e8ff;">
+                                <div class="card-body p-4">
+                                    <div class="mb-3">
+                                       <img src="images/click-funnels.svg" alt="" style="width:40px;height:auto;">
+                                    </div>
+                                    <h5 class="card-title mb-3">ClickFunnels</h5>
+                                    <div class="d-flex gap-2  flex-wrap">
+                                        <span class="badge p-2 fs-6" style="background-color: rgb(14 77 94); color: #fff;">Automation</span>
+                                        <span class="badge p-2 fs-6" style="background-color: rgb(14 77 94); color: #fff;">Native</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card h-100 shadow-sm border-0" style="background-color: #d2e8ff;">
+                                <div class="card-body p-4">
+                                    <div class="mb-3">
+                                       <img src="images/convertkit01.svg" alt="" style="width:40px;height:auto;">
+                                    </div>
+                                    <h5 class="card-title mb-3">ConvertKit</h5>
+                                    <div class="d-flex gap-2  flex-wrap">
+                                        <span class="badge p-2 fs-6" style="background-color: rgb(14 77 94); color: #fff;">Automation</span>
+                                        <span class="badge p-2 fs-6" style="background-color: rgb(14 77 94); color: #fff;">Native</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                    
+    
+                       
+    
+                    </div>
+                </div>
+    
+                <!-- ANALYTICS TAB -->
+                <div class="tab-pane fade" id="analytics">
+                    <div class="row g-4 mt-2">
+                        <!-- All 3 Cards -->
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card h-100 shadow-sm border-0" style="background-color: #d2e8ff;">
+                                <div class="card-body p-4">
+                                    <div class="mb-3">
+                                       <img src="images/drip-ar21.svg" alt="" style="width:40px;height:auto;">
+                                    </div>
+                                    <h5 class="card-title mb-3">Drip</h5>
+                                    <div class="d-flex gap-2  flex-wrap">
+                                        <span class="badge p-2 fs-6" style="background-color: rgb(14 77 94); color: #fff;">Drip</span>
+                                      
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card h-100 shadow-sm border-0" style="background-color: #d2e8ff;">
+                                <div class="card-body p-4">
+                                    <div class="mb-3">
+                                       <img src="images/enormail.svg" alt="" style="width:40px;height:auto;">
+                                    </div>
+                                    <h5 class="card-title mb-3">Enormail</h5>
+                                    <div class="d-flex gap-2  flex-wrap">
+                                        <span class="badge p-2 fs-6" style="background-color: rgb(14 77 94); color: #fff;">Automation</span>
+                                        <span class="badge p-2 fs-6" style="background-color: rgb(14 77 94); color: #fff;">Native</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card h-100 shadow-sm border-0" style="background-color: #d2e8ff;">
+                                <div class="card-body p-4">
+                                    <div class="mb-3">
+                                       <img src="images/meta-1.svg" alt="" style="width:40px;height:auto;">
+                                    </div>
+                                    <h5 class="card-title mb-3">Facebook Leads Ads</h5>
+                                    <div class="d-flex gap-2  flex-wrap">
+                                        <span class="badge p-2 fs-6" style="background-color: rgb(14 77 94); color: #fff;">Zapier</span>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card h-100 shadow-sm border-0" style="background-color: #d2e8ff;">
+                                <div class="card-body p-4">
+                                    <div class="mb-3">
+                                       <img src="images/6929233_google-ads_logo_icon.svg" alt="" style="width:40px;height:auto;">
+                                    </div>
+                                    <h5 class="card-title mb-3">Google Ads leads</h5>
+                                    <div class="d-flex gap-2  flex-wrap">
+                                        <span class="badge p-2 fs-6" style="background-color: rgb(14 77 94); color: #fff;">Zapier</span>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+    
+                <!-- EMAIL MARKETING TAB -->
+                <div class="tab-pane fade" id="email">
+                    <div class="row g-4 mt-2">
+                        <!-- All 3 Cards -->
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card h-100 shadow-sm border-0" style="background-color: #d2e8ff;">
+                                <div class="card-body p-4">
+                                    <div class="mb-3">
+                                       <img src="images/drip-ar21.svg" alt="" style="width:40px;height:auto;">
+                                    </div>
+                                    <h5 class="card-title mb-3">Drip</h5>
+                                    <div class="d-flex gap-2  flex-wrap">
+                                        <span class="badge p-2 fs-6" style="background-color: rgb(14 77 94); color: #fff;">Drip</span>
+                                      
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card h-100 shadow-sm border-0" style="background-color: #d2e8ff;">
+                                <div class="card-body p-4">
+                                    <div class="mb-3">
+                                       <img src="images/enormail.svg" alt="" style="width:40px;height:auto;">
+                                    </div>
+                                    <h5 class="card-title mb-3">Enormail</h5>
+                                    <div class="d-flex gap-2  flex-wrap">
+                                        <span class="badge p-2 fs-6" style="background-color: rgb(14 77 94); color: #fff;">Automation</span>
+                                        <span class="badge p-2 fs-6" style="background-color: rgb(14 77 94); color: #fff;">Native</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card h-100 shadow-sm border-0" style="background-color: #d2e8ff;">
+                                <div class="card-body p-4">
+                                    <div class="mb-3">
+                                       <img src="images/meta-1.svg" alt="" style="width:40px;height:auto;">
+                                    </div>
+                                    <h5 class="card-title mb-3">Facebook Leads Ads</h5>
+                                    <div class="d-flex gap-2  flex-wrap">
+                                        <span class="badge p-2 fs-6" style="background-color: rgb(14 77 94); color: #fff;">Zapier</span>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card h-100 shadow-sm border-0" style="background-color: #d2e8ff;">
+                                <div class="card-body p-4">
+                                    <div class="mb-3">
+                                       <img src="images/6929233_google-ads_logo_icon.svg" alt="" style="width:40px;height:auto;">
+                                    </div>
+                                    <h5 class="card-title mb-3">Google Ads leads</h5>
+                                    <div class="d-flex gap-2  flex-wrap">
+                                        <span class="badge p-2 fs-6" style="background-color: rgb(14 77 94); color: #fff;">Zapier</span>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                    </div>
+                    <div class="row g-4 mt-2">
+                        <!-- All 3 Cards -->
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card h-100 shadow-sm border-0" style="background-color: #d2e8ff;">
+                                <div class="card-body p-4">
+                                    <div class="mb-3">
+                                       <img src="images/google_sheets_logo.svg" alt="" style="width:40px;height:auto;">
+                                    </div>
+                                    <h5 class="card-title mb-3">Google Sheets</h5>
+                                    <div class="d-flex gap-2  flex-wrap">
+                                        <span class="badge p-2 fs-6" style="background-color: rgb(14 77 94); color: #fff;">Zapier</span>
+                                      
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card h-100 shadow-sm border-0" style="background-color: #d2e8ff;">
+                                <div class="card-body p-4">
+                                    <div class="mb-3">
+                                       <img src="images/google-tag-manager.svg" alt="" style="width:40px;height:auto;">
+                                    </div>
+                                    <h5 class="card-title mb-3">Google Tag Manager</h5>
+                                    <div class="d-flex gap-2  flex-wrap">
+                                        <span class="badge p-2 fs-6" style="background-color: rgb(14 77 94); color: #fff;">Analytics & Tags</span>
+                                        <span class="badge p-2 fs-6" style="background-color: rgb(14 77 94); color: #fff;">Native</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card h-100 shadow-sm border-0" style="background-color: #d2e8ff;">
+                                <div class="card-body p-4">
+                                    <div class="mb-3">
+                                       <img src="images/hubspot (1).svg" alt="" style="width:40px;height:auto;">
+                                    </div>
+                                    <h5 class="card-title mb-3">Hub Spot</h5>
+                                    <div class="d-flex gap-2  flex-wrap">
+                                        <span class="badge p-2 fs-6" style="background-color: rgb(14 77 94); color: #fff;">CRM</span>
+                                        <span class="badge p-2 fs-6" style="background-color: rgb(14 77 94); color: #fff;">Native</span>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card h-100 shadow-sm border-0" style="background-color: #d2e8ff;">
+                                <div class="card-body p-4">
+                                    <div class="mb-3">
+                                       <img src="images/integrately_new_logo_icon.svg" alt="" style="width:40px;height:auto;">
+                                    </div>
+                                    <h5 class="card-title mb-3">Integrately</h5>
+                                    <div class="d-flex gap-2  flex-wrap">
+                                        <span class="badge p-2 fs-6" style="background-color: rgb(14 77 94); color: #fff;">Automation</span>
+                                        <span class="badge p-2 fs-6" style="background-color: rgb(14 77 94); color: #fff;">Native</span>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                       
+    
+                    </div>
+                </div>
+    
+                <!-- CRM TAB -->
+                <div class="tab-pane fade" id="crm">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card h-100 shadow-sm border-0" style="background-color: #d2e8ff;">
+                            <div class="card-body p-4">
+                                <div class="mb-3">
+                                   <img src="images/hubspot (1).svg" alt="" style="width:40px;height:auto;">
+                                </div>
+                                <h5 class="card-title mb-3">Hub Spot</h5>
+                                <div class="d-flex gap-2  flex-wrap">
+                                    <span class="badge p-2 fs-6" style="background-color: rgb(14 77 94); color: #fff;">CRM</span>
+                                    <span class="badge p-2 fs-6" style="background-color: rgb(14 77 94); color: #fff;">Native</span>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- API Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h2 class="fw-bold mb-4">Create your own API integration</h2>
+                    <p class="text-muted mb-4">We offer a powerful REST API which allows you to create your own integration in a matter of hours. Connect your own website or system easily with WebinarGeek, send us registrations of request lists of your viewers. The possibilities are endless.</p>
+                    <button class="btn btn-outline-primary">Explore API documentation</button>
+                </div>
+                <div class="col-lg-6">
+                    <div class="bg-white p-5 rounded shadow-sm">
+                        <pre class="mb-0"><code class="text-primary">{
+                            "api": "REST API",
+                            "version": "v2",
+                            "features": [
+                                "Webhooks",
+                                "Authentication",
+                                "Data sync"
+                            ]
+                            }</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">Integrations FAQ</h2>
+            <p class="text-center text-muted mb-5">Connect your tools in just a few clicks</p>
+            
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item border-0 mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    Which tools does WebinarGeek integrate with out of the box?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    WebinarGeek integrates with numerous popular tools including Zapier, Integrately, and through our REST API with thousands more applications.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item border-0 mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    Can I connect WebinarGeek to apps that aren't on the list?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes! Using our REST API or automation platforms like Zapier, you can connect to virtually any application.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item border-0 mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    Does WebinarGeek provide an API for custom integrations?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Absolutely! We offer a comprehensive REST API with full documentation.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item border-0 mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                    Can I track ad conversions from my webinars?
+                                </button>
+                            </h2>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes, you can track conversions through our analytics integrations and custom pixels.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item border-0">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                                    Are integrations available during the free trial?
+                                </button>
+                            </h2>
+                            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes, all integrations are available during your 14-day free trial.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section bg-light">
+        <div class="container">
+            <h2>Try it now</h2>
+            <p>14 days free. All Premium features. No strings attached.</p>
+            <div class="d-flex gap-3 justify-content-center flex-wrap">
+                <a href="register.html" class="btn btn-primary-custom btn-lg">
+                    <i class="fas fa-play"></i> Start free trial
+                </a>
+                <button class="btn btn-secondary-custom btn-lg">
+                    <i class="fas fa-video"></i> Watch the demo
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h6>WEBINARIS</h6>
+                    <p style="font-size: 0.9rem;">Socials: 40 High St<br>Newburgh, NY 12550 USA</p>
+                    <p style="font-size: 0.9rem;">Phone: +49 40 5247 5920<br>privacy@webinaris.com</p>
+                </div>
+                <div class="footer-column">
+                    <h6>Product</h6>
+                    <ul>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Integrations</a></li>
+                        <li><a href="#">What's new</a></li>
+                        <li><a href="#">Digital run guide</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h6>Learn</h6>
+                    <ul>
+                        <li><a href="#">Webinars</a></li>
+                        <li><a href="#">Resources</a></li>
+                        <li><a href="#">Learning guide</a></li>
+                        <li><a href="#">Customers</a></li>
+                        <li><a href="#">Affiliate Program</a></li>
+                        <li><a href="#">Event Program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h6>About</h6>
+                    <ul>
+                        <li><a href="#">Company</a></li>
+                        <li><a href="#">Our story</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Newsroom</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h6>Support</h6>
+                    <ul>
+                        <li><a href="#">Help center</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Get in touch</a></li>
+                        <li><a href="#">Service and solution</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2014 – 2024 All rights are registered / Terms and conditions / Privacy policy</p>
+               
+            </div>
+        </div>
+     </footer>  
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
